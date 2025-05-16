@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3; 
+            color: #333;
+        }
+        header {
+            background: #444; 
+            color: #fff;
+            padding: 20px ;
+            text-align: center;
+        }
+        nav {
+            margin: 20px ;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: #555; 
+        }
+        section {
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px; 
+            box-shadow:  2px ;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-item {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #444;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background: #444; 
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #555; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contacts</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À Propos</a>
+        <a href="cv.html">CV</a>
+        <a href="projets.html">Projets</a>
+    </nav>
+</header>
+
+<section>
+    <div class="contact-info">
+        <div class="contact-item">
+            <strong>Email :</strong> <a href="mailto:mumpibir@gmail.com">mumpibir@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <strong>Téléphone :</strong> <a href="tel:+243976162253">+243976162253</a>
+        </div>
+        <div class="contact-item">
+            <strong>Adresse :</strong> Av Matadi 58, C Mont-Ngafula  Q kimbwala;Kinshasa/ RDC
+        </div>
+    </div>
+
+    <h2>Envoyez-moi un message</h2>
+    <form action="mailto:mumpibir@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+        <input type="submit" value="Envoyer">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mon Portfolio</p>
+</footer>
+
+</body>
+</html>
