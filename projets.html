@@ -19,18 +19,36 @@
             padding: 20px 0;
             text-align: center;
         }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            transition: background 0.3s;
-            border-radius: 5px;
-        }
-        nav a:hover {
-            background: #555;
+        .menu {
+    display: none;
+    background-color: #333;
+    width: 50vw; /* 50% de la largeur de l'écran */
+    height: 100vh; /* 100% de la hauteur de l'écran */
+    position: fixed;
+    top: 0;
+    left: 0; /* Positionné à gauche */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Ajustement de l'ombre */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+        .hamburger {
+            cursor: pointer;
+            font-size: 30px;
+            padding: 10px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000; /* Assure que le bouton soit au-dessus du menu */
         }
         section {
             padding: 20px;
@@ -61,7 +79,8 @@
 
 <header>
     <h1>Mes Projets</h1>
-    <nav>
+    <div class="hamburger" id="hamburger">☰ Menu</div>
+    <nav class="menu" id="menu">
         <a href="index.html">Accueil</a>
         <a href="about.html">À Propos</a>
         <a href="cv.html">CV</a>
@@ -86,6 +105,6 @@
 <footer>
     <p>&copy; 2025 Mon Portfolio</p>
 </footer>
-
+<script src="Untitled-1.js"></script>
 </body>
 </html>

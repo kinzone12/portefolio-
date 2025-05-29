@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,52 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Propos</title>
     <link rel="stylesheet" href="styles.css">
-   <style>
+    <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #eef2f3; 
-            color: #333;
+            background-color: black; 
+            color: #fff;
         }
         header {
             background: #444; 
-            color: #fff;
             padding: 20px 0;
             text-align: center;
         }
-        nav {
-            margin: 20px 0;
+        .menu {
+            display: none;
+            background-color: #333;
+            width: 50vw; /* 50% de la largeur de l'écran */
+            height: 100vh; /* 100% de la hauteur de l'écran */
+            position: fixed;
+            top: 0;
+            right: 0; /* Positionné à droite */
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
         }
-        nav a {
-            color: #fff;
-            padding: 10px 20px;
+        .menu a {
+            color: white;
             text-decoration: none;
-            transition: background 0.3s;
-            border-radius: 5px;
+            display: block;
+            padding: 10px 0;
         }
-        nav a:hover {
-            background: #555; 
+        .menu a:hover {
+            background-color: #575757;
+        }
+        .hamburger {
+            cursor: pointer;
+            font-size: 30px;
+            padding: 10px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000; /* Assure que le bouton soit au-dessus du menu */
         }
         section {
-            padding: 150px;
+            padding: 50px;
             background: white;
             border-radius: 8px;
-            margin: 150px auto;
+            margin: 50px auto;
             max-width: 600px; 
-            box-shadow:  6px ;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .profil {
+            text-align: center;
+            margin-bottom: 20px;
         }
         .contact-info {
             margin-bottom: 20px;
-        }
-        .contact-item {
-            margin-bottom: 10px;
         }
         footer {
             text-align: center;
             padding: 20px 0;
             background: #444;
-            color: #fff;
+            color: white;
             position: relative;
             bottom: 0;
             width: 100%;
@@ -74,37 +91,28 @@
         input[type="submit"]:hover {
             background: #555; 
         }
-        .profil a {
-           display: flex;
-           align-content: ;
-           gap: 20px;
-           max-width: 900;
-           margin: 20px auto;
-       }
-
-    </style>.
+    </style>
 </head>
 <body>
 
 <header>
     <h1>A Propos</h1>
-     <nav>
+    <div class="hamburger" id="hamburger">☰ Menu</div>
+    <nav class="menu" id="menu">
         <a href="index.html">Accueil</a>
+        <a href="autobiographie.html">autobiographie</a>
         <a href="cv.html">CV</a>
         <a href="projets.html">Projets</a>
         <a href="contacts.html">Contact</a>
-     </nav> 
+    </nav> 
 </header>
-<section class="a">
-    <div class="profil a">
-        <img src="C:\Users\mumpu\Pictures\Camera Roll\WIN_20250502_08_33_22_Pro.jpg" height="400" alt="mon image" class="profil">
-    </div>
-    <div class="txt">
-       
-    <p>Bonjour! Je suis  <strong>MUMPUBI RUBIS ELAM</strong> , un développeur passionné par la création de sites web ,d'applications et aussi de jeux video. Mon objectif est de créer des expériences inoubliable aux utilisateurs telque vous et moi par le fonctionnement de mes creations  <br>
-     Bien evidemment mes services ne sont pas gratuit ,<br> que ce soit pour une demande officiel ou autre , je suis pret a entrer a votre service et vous assurez que vous serez satisfaits de mes services <br>
-     veuillez me contactez si vous avez besoin de moi .</p>
 
+<section>
+    <div class="txt">
+        <p>Bonjour! Je suis <strong>MUMPUBI RUBIS ELAM</strong>, un développeur passionné par la création de sites web, d'applications et de jeux vidéo. Mon objectif est de créer des expériences inoubliables pour les utilisateurs comme vous et moi grâce à mes créations. <br>
+        Bien évidemment, mes services ne sont pas gratuits. <br>
+        Que ce soit pour une demande officielle ou autre, je suis prêt à entrer à votre service et je vous assure que vous serez satisfait de mes prestations. <br>
+        Veuillez me contacter si vous avez besoin de moi.</p>
     </div>
 </section>
 
@@ -112,5 +120,7 @@
     <p>&copy; 2025 Mon Portfolio</p>
 </footer>
 
+<script src="Untitled-1.js"></script>
 </body>
 </html>
+```
