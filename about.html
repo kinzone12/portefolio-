@@ -12,7 +12,18 @@
             margin: 0;
             padding: 0;
             background-color: black; 
-            color: #fff;
+            color: black;
+        }
+        header {
+            background: ; 
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: red;
         }
         header {
             background: #444; 
@@ -20,26 +31,29 @@
             text-align: center;
         }
         .menu {
-            display: none;
-            background-color: #333;
-            width: 50vw; /* 50% de la largeur de l'écran */
-            height: 100vh; /* 100% de la hauteur de l'écran */
-            position: fixed;
-            top: 0;
-            right: 0; /* Positionné à droite */
-            padding: 20px;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-        }
+    display: none;
+    background-color: #333;
+    width: 50vw; /* 50% de la largeur de l'écran */
+    height: 100vh; /* 100% de la hauteur de l'écran */
+    position: fixed;
+    top: 0;
+    left: 0; /* Positionné à gauche */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Ajustement de l'ombre */
+}
+
         .menu a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: 10px 0;
+        color: red;
+        text-decoration: none;
+         display: block;
+         padding: 10px 0;
         }
+
         .menu a:hover {
-            background-color: #575757;
-        }
+         background-color: #575757;
+         }
         .hamburger {
+            color: red;
             cursor: pointer;
             font-size: 30px;
             padding: 10px;
@@ -47,6 +61,7 @@
             top: 20px;
             left: 20px;
             z-index: 1000; /* Assure que le bouton soit au-dessus du menu */
+            object-fit: cover;
         }
         section {
             padding: 50px;
@@ -56,9 +71,24 @@
             max-width: 600px; 
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
+        .AA{
+            border-radius: 60%;
+            padding: 1px;
+            object-fit: cover;
+            width:350px;
+            height: 350px;
+            top: 70px;
+            left:90px ;
+        }
         .profil {
-            text-align: center;
-            margin-bottom: 20px;
+            width: 300px;
+            padding: 1px;
+            background: white;
+            border-radius: 300px;
+            margin: 50px auto;
+            max-width: 600px; 
+            box-shadow:  2px 10px rgba(0, 0, 0, 0.2);
+            height: 350px;
         }
         .contact-info {
             margin-bottom: 20px;
@@ -99,7 +129,6 @@
     <h1>A Propos</h1>
     <div class="hamburger" id="hamburger">☰ Menu</div>
     <nav class="menu" id="menu">
-        <a href="index.html">Accueil</a>
         <a href="autobiographie.html">autobiographie</a>
         <a href="cv.html">CV</a>
         <a href="projets.html">Projets</a>
@@ -108,6 +137,9 @@
 </header>
 
 <section>
+    <div class="profil">
+        <img class="AA" src="C:\Users\mumpu\Pictures\Camera Roll\WIN_20250502_08_33_22_Pro.jpg"   alt="profil">
+    </div>
     <div class="txt">
         <p>Bonjour! Je suis <strong>MUMPUBI RUBIS ELAM</strong>, un développeur passionné par la création de sites web, d'applications et de jeux vidéo. Mon objectif est de créer des expériences inoubliables pour les utilisateurs comme vous et moi grâce à mes créations. <br>
         Bien évidemment, mes services ne sont pas gratuits. <br>
