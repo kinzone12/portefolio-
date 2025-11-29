@@ -3,157 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title> 
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black; 
-            color: #fff;
-        }
-        h1{
-            color: red;
-        }
-        th{
-            color: red;
-        }
-        header {
-            background: #444; 
-            padding: 20px 0;
-            text-align: center;
-        }
-        
-        section {
-            padding: 50px;
-            background: white;
-            border-radius: 8px;
-            margin: 50px auto;
-            max-width: 600px; 
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #444;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input, textarea {
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        input[type="submit"] {
-            background: #444; 
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background: #555; 
-        }
-        .project {
-            margin: 10px 0;
-            padding: 10px;
-            border-left: 4px solid #007BFF;
-            background: #f9f9f9;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #444;
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .profil {
-            color: black;
-           padding: 20px;
-            background: white;
-            border-radius: 8px;
-            margin: 20px auto;
-            max-width: 600px; 
-            box-shadow:  2px ;  
-        .menu {
-    display: none;
-    background-color: #333;
-    width: 50vw; /* 50% de la largeur de l'écran */
-    height: 100vh; /* 100% de la hauteur de l'écran */
-    position: fixed;
-    top: 0;
-    left: 0; /* Positionné à gauche */
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Ajustement de l'ombre */
-}
-
-        .menu a {
-        color: red;
-        text-decoration: none;
-         display: block;
-         padding: 10px 0;
-        }
-
-        .menu a:hover {
-         background-color: #575757;
-         }
-        .hamburger {
-            color: red;
-            cursor: pointer;
-            font-size: 30px;
-            padding: 10px;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000; /* Assure que le bouton soit au-dessus du menu */
-        }     
-    </style>
+    <meta name="description" content="Portfolio de Mumpubi Elam Rubis - Développeur Web">
+    <meta name="keywords" content="portfolio, développeur, web, HTML, CSS, Java, Python, SQL">
+    <meta name="author" content="Mumpubi Elam Rubis">
+    <title>Mumpubi Elam Rubis | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
+        <!-- NAVIGATION LATÉRALE -->
+        <nav>
+            <a href="#" class="logo">Mumpubi</a>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-<header>
-    <h1>Mon Portfolio</h1>
-    <div class="hamburger" id="hamburger">☰ Menu</div>
-    <nav class="menu" id="menu">
-        <a href="about.html">À Propos</a>
-        <a href="cv.html">CV</a>
-        <a href="projets.html">Projets</a>
-        <a href="contacts.html">Contact</a>
-    </nav>
-</header>
-<table class="profil">
-    <tr>
-        <th>Nom </th>
-        <td>MUMPUBI ELAM RUBIS </td>
-    </tr>
-    <tr>
-        <th>Date de Naissance</th>
+        <!-- CONTENU PRINCIPAL -->
+        <main>
+            <!-- SECTION HERO -->
+            <section id="accueil" class="hero">
+                <h1>Mumpubi Elam Rubis</h1>
+                <p class="hero-subtitle">
+                    Développeur Web passionné. Je crée des expériences numériques modernes et performantes en HTML, CSS, Java, Python et SQL.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                    <a href="#projets" class="btn btn-secondary">Voir mes projets</a>
+                </div>
+            </section>
 
-        <td> 27 FEVRIER 2006</td>
+            <div class="section-divider"></div>
 
-    </tr>
-    <tr>
-        <th>Biographie</th>
-        <td> <p>je suis nee a l'hopital st jospeph a kinshasa ,j'ai fait mes etudes primaires au college BOBOTO ou j'ai aussi passee une partie de ma scolarite au humanites ,</p> <p>c'est en 1er humanite scientifique que j'ai pu passe de classe mais vers un autre etablissement ,</p> <p>le college ST JOSEPH/ELIKYA ou j'ai decroche mon Diplome d'Etat avec une bonne mention (73%) .                                                    </p> 
-        actuellement je poursuis mes etudes academiques a l'UPC dans la Faculte des Sciences Informatique .</td>
-    </tr>
-    
-</table>
+            <!-- SECTION PROJETS -->
+            <section id="projets">
+                <h2>Mes Projets</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Portfolio Personnel</h3>
+                        <p class="project-description">
+                            Un portfolio minimaliste moderne avec design noir et bordures bleu sombre. Responsive et optimisé pour tous les appareils.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
 
-<footer>
-    <p>&copy; 2025 Mon Portfolio</p>
-</footer>
-<script src="Untitled-1.js"></script>
+                    <div class="project-card">
+                        <h3>Site Web d'Information</h3>
+                        <p class="project-description">
+                            Un site web informatif avec contenu dynamique, navigation fluide et design professionnel. Parfait pour partager des connaissances.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Jeu Snake</h3>
+                        <p class="project-description">
+                            Un jeu Snake interactif développé en JavaScript. Avec système de score, niveaux de difficulté et interface utilisateur intuitive.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Canvas</span>
+                            <span class="tag">Jeu</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Applications Backend</h3>
+                        <p class="project-description">
+                            Développement d'applications backend robustes avec Java et Python. Intégration de bases de données SQL et APIs REST.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- SECTION COMPÉTENCES -->
+            <section id="competences">
+                <h2>Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript, Responsive Design, Animations, Interfaces Modernes</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Backend</h3>
+                        <p>Java, Python, Développement d'Applications, Logique Métier, Algorithmes</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Bases de Données</h3>
+                        <p>SQL, Requêtes Complexes, Optimisation, Gestion de Données, Intégrité</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Outils & Versioning</h3>
+                        <p>Git, GitHub, Contrôle de Version, Collaboration, Déploiement</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Design & UX</h3>
+                        <p>UI/UX Design, Accessibilité Web, Expérience Utilisateur, Design Thinking</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Soft Skills</h3>
+                        <p>Communication, Collaboration, Résolution de Problèmes, Apprentissage Continu</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- SECTION À PROPOS -->
+            <section id="apropos">
+                <h2>À Propos de Moi</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Je suis Mumpubi Elam Rubis, un développeur web passionné par la création d'expériences numériques modernes et performantes. Mon parcours combine une solide maîtrise du frontend avec une expertise en backend.
+                        </p>
+                        <p>
+                            Je maîtrise les technologies essentielles du développement web : HTML, CSS et JavaScript pour le frontend, Java et Python pour le backend, et SQL pour la gestion des bases de données.
+                        </p>
+                        <p>
+                            Mon approche est centrée sur la création de solutions robustes, performantes et faciles à maintenir. Je suis constamment à la recherche de nouvelles technologies et de meilleures pratiques pour améliorer mes compétences.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <span>Mumpubi Elam Rubis</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- SECTION CONTACT -->
+            <section id="contact">
+                <h2>Commençons</h2>
+                <div class="contact-content">
+                    <p>
+                        Vous avez un projet en tête ou vous souhaitez discuter ? Je serais ravi de vous aider et de collaborer sur vos idées.
+                    </p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" title="GitHub" aria-label="GitHub">GH</a>
+            <a href="https://facebook.com" target="_blank" title="Facebook" aria-label="Facebook">FB</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram" aria-label="Instagram">IG</a>
+            <a href="https://wa.me" target="_blank" title="WhatsApp" aria-label="WhatsApp">WA</a>
+        </div>
+        <p>&copy; 2024 Mumpubi Elam Rubis. Tous droits réservés.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
